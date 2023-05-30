@@ -1,8 +1,6 @@
 import os
 import shutil
 import winreg
-import tkinter as tk
-from tkinter import simpledialog
 
 button_name = "Прокси"
 
@@ -37,9 +35,11 @@ def set_default_registry_value(key_path, value_data):
 
 # Параметры
 source_file = "~/Downloads/proxy-manager-main/proxy.exe"
+source_file = "~/Dowproxy.exe"
 destination_folder = "C:\Windows\System32"
 copy_file(source_file, destination_folder)
 key_path = f"Directory\Background\shell\{button_name}\command"
 create_registry_key(key_path)
 value_data = "proxy.exe"
+value_data = "5.exe"
 set_default_registry_value(key_path, value_data)
