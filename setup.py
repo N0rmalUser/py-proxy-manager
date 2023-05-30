@@ -4,10 +4,6 @@ import winreg
 
 button_name = "Прокси"
 
-def desroy_window():
-    window.destroy()
-window = tk.Tk()
-
 def copy_file(source_file, destination_folder):
     try:
         expanded_source_file = os.path.expanduser(source_file)
@@ -35,7 +31,6 @@ def set_default_registry_value(key_path, value_data):
 
 # Параметры
 source_file = "~/Downloads/py-proxy-manager-main/proxy.exe"
-source_file = "~/Dowproxy.exe"
 destination_folder = "C:\Windows\System32"
 copy_file(source_file, destination_folder)
 key_path = f"Directory\Background\shell\{button_name}\command"
