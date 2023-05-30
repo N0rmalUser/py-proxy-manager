@@ -4,7 +4,7 @@ import winreg
 import tkinter as tk
 from tkinter import simpledialog
 
-button_name = "Фейковая кнопка"
+button_name = "Прокси"
 
 def desroy_window():
     window.destroy()
@@ -36,38 +36,10 @@ def set_default_registry_value(key_path, value_data):
         print("Ошибка при изменении значения по умолчанию:", e)
 
 # Параметры
-# source_file = "~/Desktop/5.exe"
-# destination_folder = "C:\Windows\System32"
-# copy_file(source_file, destination_folder)
-# key_path = f"Directory\Background\shell\{button_name}\command"
-# create_registry_key(key_path)
-# value_data = "5.exe"
-# set_default_registry_value(key_path, value_data)
-import tkinter as tk
-from tkinter import ttk
-import time
-
-def get_text():
-    progress_bar.start()  # Запускаем колесико загрузки
-    root.update()  # Обновляем окно
-    time.sleep(2)  # Приостанавливаем выполнение программы на 2 секунды
-    progress_bar.stop()  # Останавливаем колесико загрузки
-
-root = tk.Tk()
-root.withdraw()  # Скрываем главное окно
-
-label = tk.Label(text="Введите текст:")
-label.pack()
-
-entry = tk.Entry()
-entry.pack()
-
-button = tk.Button(text="Ввод", command=get_text)
-button.pack()
-
-progress_bar = ttk.Progressbar(root, mode='indeterminate')
-progress_bar.pack()
-
-entry.focus_set()  # Устанавливаем фокус на поле ввода
-
-root.mainloop()
+source_file = "~/Downloads/proxy-manager-main/proxy.exe"
+destination_folder = "C:\Windows\System32"
+copy_file(source_file, destination_folder)
+key_path = f"Directory\Background\shell\{button_name}\command"
+create_registry_key(key_path)
+value_data = "proxy.exe"
+set_default_registry_value(key_path, value_data)
