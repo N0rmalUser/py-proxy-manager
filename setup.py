@@ -36,5 +36,4 @@ copy_file(source_file, destination_folder)
 key_path = f"Directory\Background\shell\{button_name}\command"
 create_registry_key(key_path)
 value_data = "proxy.exe"
-value_data = "5.exe"
 set_default_registry_value(key_path, value_data)
