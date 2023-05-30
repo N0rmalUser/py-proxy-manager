@@ -21,4 +21,3 @@ def show_dialog():
         print("Ошибка при изменении значения реестра")
 
 show_dialog()
-

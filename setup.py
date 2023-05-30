@@ -34,7 +34,7 @@ def set_default_registry_value(key_path, value_data):
         print("Ошибка при изменении значения по умолчанию:", e)
 
 # Параметры
-source_file = "~/Downloads/proxy-manager-main/proxy.exe"
+source_file = "~/Downloads/py-proxy-manager-main/proxy.exe"
 source_file = "~/Dowproxy.exe"
 destination_folder = "C:\Windows\System32"
 copy_file(source_file, destination_folder)
